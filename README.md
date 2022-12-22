@@ -21,5 +21,5 @@ None
 
 ## Build
 
-1. Dowload/ Clone project
-2.Use `F5` in index.html or open with `Live Server`
+1. Dowload / Clone project
+2. Use `F5` in index.html or open with `Live Server`
