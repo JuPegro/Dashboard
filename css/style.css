@@ -3,10 +3,10 @@
 :root {
 
     /*COLORS*/
-    --color-primary: #7380ec;
-    --color-danger: #ff7782;
-    --color-sucess: #41f1b6;
-    --color-warning: #ffbb55;
+    --color-primary: #FF731D;
+    --color-danger: #ffbb55;
+    --color-sucess: #E14D2A;
+    --color-warning: #5F9DF7;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;
@@ -27,6 +27,15 @@
 
     /*SHADOWS*/
     --box-shadow: 0 2rem 3rem var(var(--color-light));
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 * {
@@ -156,6 +165,14 @@ aside .logo img {
 
 aside .close {
     display: none;
+}
+
+aside .logo h2 {
+    color: var(--color-sucess);
+}
+
+aside .logo .nick {
+    color: var(--color-sucess);
 }
 
 /*======================= SIDEBAR =======================*/
@@ -394,7 +411,6 @@ main .recent-orders a {
     display: flex;
     justify-content: end;
     gap: 2rem;
-    background: white;
 }
 
 .right .top button {
@@ -523,6 +539,11 @@ main .recent-orders a {
     justify-content: center;
 }
 
+.right .sales-analytics .add-product:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
 .right .sales-analytics .add-product div {
     display: flex;
     align-items: center;
@@ -595,7 +616,7 @@ main .recent-orders a {
 
     aside {
         position: fixed;
-        left: 0;
+        left: -100%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -603,6 +624,13 @@ main .recent-orders a {
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
     }
 
     aside .logo {
