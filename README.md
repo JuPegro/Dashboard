@@ -3,11 +3,13 @@
 Frontend Dashboard
 
 ![PHOTO!](./img/README/Captura%20de%20pantalla%202022-12-21%20212722.png)
+![PHOTO!](./img/README/2.png)
 
 ## Features
 
 - It just a frontend project
 - Created in HTML, CSS and JavaScript
+- Darkmode
 
 ## Technologies
 
